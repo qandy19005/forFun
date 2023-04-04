@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* drawer main css start */
+.right-drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transform: translate(0%);
+    transition: 1s all ease-in-out;
+}
+
+.active-right-drawer {
+    transform: translate(-200%);
+    transition: 1s all ease-in-out;
+}
+/* drawer main css end */
+
+.drawer-header {
+    background-color: rgba(212, 212, 212, 0.5);
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(52, 52, 52)
+}
+
+.drawer-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.deep-gray-box {
+    background-color: rgba(27, 27, 27, 0.8);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-top: 20px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+}
+
+.toggle-btn {
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(27, 27, 27, 0.8);
+    padding: 10px;
+    color: #ffffff;
+    transition: 0.4s all ease;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: rgba(27, 27, 27, 1);
+    transition: 0.4s all ease;
+}
+
+/* common */
+.h-8 {
+    height: 100vh;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .drawer-header {
+        font-size: 1rem;
+    }
+    
+    .drawer-body {
+        font-size: 1.5rem;
+    }
+}
