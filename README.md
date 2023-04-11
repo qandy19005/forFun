@@ -16,3 +16,8 @@ Just enjoy
 [file path] - components/drawer/index.html
 
 ![My Image](images/drawer.png)
+
+# Stick on the top
+[file path] - components/stick-top/index.html
+
+![My Image](images/stick-top.png)
